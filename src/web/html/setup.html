@@ -615,6 +615,7 @@
             }
 
             function parseGeneric(obj) {
+                document.title = obj["device_name"] + " : " + document.title;
                 parseNav(obj);
                 parseESP(obj);
                 parseRssi(obj);

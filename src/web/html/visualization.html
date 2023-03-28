@@ -23,6 +23,7 @@
             var total = Array(5).fill(0);
 
             function parseGeneric(obj) {
+                document.title = obj["device_name"] + " : " + document.title;
                 if(true == exeOnce){
                     parseNav(obj);
                     parseESP(obj);

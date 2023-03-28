@@ -68,6 +68,7 @@
             var exeOnce = true;
 
             function parseGeneric(obj) {
+                document.title = obj["device_name"] + " : " + document.title;
                 var up = obj["ts_uptime"];
                 var days = parseInt(up / 86400) % 365;
                 var hrs  = parseInt(up / 3600) % 24;
